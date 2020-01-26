@@ -5,8 +5,8 @@
   "background_color": "#1111ff",
   "display": "fullscreen",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/qrcodepateo/",
+  "start_url": "/qrcodepateo/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
