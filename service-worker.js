@@ -31,6 +31,10 @@ self.addEventListener('fetch', function (event) {
                 //'/?homescreen=1', //default
                 //'/assets/css/main.css',// configure as by your site ; just an example
                 '/images/*',// choose images to keep offline; just an example
+                'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
+                'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+                'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+                'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
                 // Do not replace/delete/edit the manifest.js paths below
                 //These are links to the extenal social media buttons that should be cached;
                 // we have used twitter's as an example
