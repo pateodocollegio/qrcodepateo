@@ -1,29 +1,34 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <title>Bienvenido a Pateo do Collegio</title>
+  <title>Cripta - Pateo do Collegio</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#1111ff" />
-  <link rel="manifest" href="/manifest.json">
+  <link rel="canonical" href="https://pateodocollegio.github.io/qrcodepateo/" />
+  <link rel="manifest" href="/qrcodepateo/manifest.json">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-3">Bienvenido a Pateo do Collegio</h1>
-      <p class="lead">Dónde São Paulo empezó</p>
-      <hr class="my-2">
-      <p>Más información</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Cripta</a>
-      </p>
+  <div class="container-fluid">
+    <h2 class="display-4">Cripta Pateo do Collegio</h2>
+    <div class="row">
+      <div class="col align-self-center">
+        <img src="images/icons/icon-384x384.png" alt="logo do pateo do collegio">
+      </div>
     </div>
+    <p class="lead">Famous people are buried here</p>
+    <hr class="my-2">
+    <p>More information</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button" onclick="goToCripta()">Cripta</a>
+      <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button" onclick="goToIndex()">Home</a>
+    </p>
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -36,7 +41,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="test-service-worker.js"></script>
+  <script src="/qrcodepateo/test-service-worker.js"></script>
+  <script src="/qrcodepateo/service-worker.js"></script>
+  <script src="/qrcodepateo/navigation.js"></script>
+  <script src="/qrcodepateo/language.js"></script>
+  <script src="/qrcodepateo/cripta.js"></script>
 </body>
 
 </html>
