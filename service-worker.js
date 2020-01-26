@@ -24,13 +24,13 @@ self.addEventListener('fetch', function (event) {
                 // If you have some build process for your site, perhaps that could 
                 // generate the list of possible URLs that a user might load.               
                 '/', // do not remove this
-                '/index.html', //default
-                '/index-pt.html', //default
-                '/index-es.html', //default
+                //'/index.html', //default
+                //'/index-pt.html', //default
+                //'/index-es.html', //default
                 //'/index.html?homescreen=1', //default
                 //'/?homescreen=1', //default
                 //'/assets/css/main.css',// configure as by your site ; just an example
-                '/images/*',// choose images to keep offline; just an example
+                '/images/icons/*',// choose images to keep offline; just an example
                 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
                 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
                 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
