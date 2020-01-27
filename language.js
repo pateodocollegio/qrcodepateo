@@ -1,7 +1,7 @@
-// console.log(window.navigator.languages[0].substr(0, 2))
-// console.log(getPageName())
-// console.log(getContentLanguage())
-// console.log(getContentLanguage().pages.find(item => item.pagename === 'index'))
+console.log(window.navigator.languages[0].substr(0, 2))
+console.log(getPageName())
+console.log(getContentLanguage())
+console.log(getContentLanguage().pages.find(item => item.pagename === getPageName()))
 console.log(getPageContent())
 
 function getPageContent() {
