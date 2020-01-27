@@ -1,41 +1,28 @@
-var contents = [
-  {
-    "language": "pt",
-    "pages": [
-      {
-        "index": [
-          { "title": "Inicio Pateo do Collegio" },
-          { "welcome": "Bem vindo ao Pateo do Collegio" },
-          { "lead": "Onde Sao Paulo começou" },
-          { "moreinfo": "Mais informações" },
-        ]
-      }
-    ]
-  },
-  {
-    "language": "en",
-    "pages": [
-      {
-        "index": [
-          { "title": "Index Pateo do Collegio" },
-          { "welcome": "Welcome to Pateo do Collegio" },
-          { "lead": "Where Sao Paulo got started" },
-          { "moreinfo": "More information" },
-        ]
-      }
-    ]
-  },
-  {
-    "language": "es",
-    "pages": [
-      {
-        "index": [
-          { "title": "Home Pateo do Collegio" },
-          { "welcome": "Bienvenido a Pateo do Collegio" },
-          { "lead": "Dónde Sao Paulo empezó" },
-          { "moreinfo": "Más información" },
-        ]
-      }
-    ]
-  },
-]
+// console.log(window.navigator.languages[0].substr(0, 2))
+// console.log(getPageName())
+// console.log(getContentLanguage())
+// console.log(getContentLanguage().pages.find(item => item.pagename === 'index'))
+console.log(getPageContent())
+
+function getPageContent() {
+  return getContentLanguage().pages.find(item => item.pagename === getPageName())
+}
+
+function getNavigatorLanguage() {
+  let idiom = window.navigator.languages[0].substr(0, 2)
+  if ((idiom != 'pt') && (idiom != 'es')) {
+    return 'en'
+  }
+  return idiom
+}
+
+function getPageName() {
+  let path = window.location.pathname
+  let page = path.split("/").pop()
+  page = page.replace(".html", "")
+  return page
+}
+
+function getContentLanguage() {
+  return contents.languages.find(item => item.idiom === getNavigatorLanguage())
+}
