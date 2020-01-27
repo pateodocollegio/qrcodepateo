@@ -20,7 +20,11 @@ function getPageName() {
   let path = window.location.pathname
   let page = path.split("/").pop()
   page = page.replace(".html", "")
-  return page
+  if (page.length > 1) {
+    return page
+  }
+  return "index"
+
 }
 
 function getContentLanguage() {
